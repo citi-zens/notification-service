@@ -1,0 +1,20 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: notification-service
+  kafka:
+    consumer:
+      auto-offset-reset: earliest
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: Developer.citizens@gmail.com
+    password: your-app-password
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
